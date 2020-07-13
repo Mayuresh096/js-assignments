@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Date & Time</title>
+    </head>
+    <body>
+        <h3>Assignment 1.1</h3>
+        <h3>Program to display current Day and Time</h3>
+        <script >
+        
+
+         var today=new Date();
+         var day= today.getDay();
+
+         var week=['Monday','Tuesday','Wedensday','Thursday','Friday','Saturday','Sunday'];
+
+         document.write('Today is '+week[day]);
+          
+         document.write("<br/>");
+
+         var hrs= today.getHours();
+         var ap= hrs>=12 ? 'PM' : 'AM' ;
+         hrs = hrs%12;
+         hrs = hrs ? hrs : 12;
+         var mins = today.getMinutes();
+         mins = mins<10 ? '0' + mins : mins ;
+         var time= hrs +" "+ap+" : "+mins+" : "+today.getMilliseconds();
+   
+         document.write('Current time is : '+ time);
+        </script>
+    </body>
+</html>
