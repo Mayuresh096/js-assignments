@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var a=10;//Global Variable
+            document.write('Value of a is '+a);
+            document.write("<br/>");
+            console.log(a);
+            {
+              let b=20;//Local variable
+              document.write('Value of b is '+b);
+              document.write("<br/>");
+              console.log(b);//Displays the value because it is in the block of curly braces{} if we put the it outside the block it will not display the value because it is a let variable and its scope is restricted outsidde the block ! 
+              console.log(a);//As this is a var variable it can be accessed anywhere so it display its value every where !
+            }
+            const name= "Mayur";//Constant Variable
+            document.write('Name is '+name);
+            name = "Sagar";
+            console.log(name);//Here we get the error of the constant variable
+        </script>
+    </body>
+</html>

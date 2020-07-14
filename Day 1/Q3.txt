@@ -1,0 +1,21 @@
+In Javascript, there are five basic, or primitive, types of data.
+The five most basic types of data are strings, numbers, booleans, undefined, and null.
+
+Strings : 
+    Strings are collections of alphanumeric characters and symbols.
+    This is how we’re gonna store letters and words.
+
+Numbers :
+    Numbers are just what they sound like.
+    They’re numbers, including both integers and decimals.
+
+Booleans :
+    Booleans can only have two values True and false. 
+    They represent all data that only has two states, like a light switch On or off.
+
+Undefined :
+    The undefined data type means that the variable has been created, but has never been given a value.
+
+Null :
+    Null is similar to undefined, except it has to be set intentionally.
+    It also means empty or nothing.
