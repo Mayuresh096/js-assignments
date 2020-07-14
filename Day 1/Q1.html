@@ -7,10 +7,23 @@
         <script>
             document.write('Hello');
             alert("Click me");
-            console.log("Log")
-            console.error("Error")
-            console.assert("Assert")
-            console.warn("Waring Alert")
+   
+            console.log(5+6);
+            
+            var name={ firstname : "Mayur"};
+            console.error(name);
+             
+            var num='The number is not even';
+            for(let number=2;number<=5;number+=1)
+            {
+                console.log('The Number is '+number);
+                console.assert(number%2===0,{number: number, num: num});
+            }       
+
+            console.log("Log")//Used for displaying value in the console
+            console.error("Error")//Used to display the error in the console for debugging
+            console.assert("Assert")//Used to assert the
+            console.warn("Waring Alert")//Used to display the warning in the console for debugging
         </script>
     </body>
 </html>
