@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 Assignment</title>
+</head>
+<body>
+    <h3>Methods of String and Arrays in JS</h3>
+    <script>
+       let stn="Hello I'm Mayur.";
+       let stn1="I'm very exicted to learn JS."; 
+       console.log(stn.concat(stn1)); //concat method is used to concatenate two strings
+
+       console.log(stn.endsWith('r')); //endsWith method is used to check the value of which alphabet it ends with.Returns a boolean value(true/false)
+
+       console.log(stn.includes('Mayur')); //includes method is used to check whether the word is in the string or not.Returns a boolean value(true/false)
+
+       console.log(stn1.localeCompare(stn)); //localeCompare is used to compare two strings in the current locale
+
+       console.log(stn.match(stn1));//match method is used to search a string for a match against a regular expression,and returns the matches
+
+       console.log(stn.repeat(stn1));//returns a new string with a specified number of copies of an existing string
+
+       console.log(stn.replace(stn1));//replace the existing string with the new one
+
+       console.log(stn.search("I'm"));//search is used to serach specified word or string and it returns position of the match
+
+       let stn2="Namaste !!!"
+       console.log(stn2.slice(stn1));//slice methods extracts a part of string and returns a new string
+
+       console.log(stn.split());//split method is used to convert string into array
+
+       console.log(stn.trim(stn));//trim method removes whitespace from both ends of string
+
+       console.log(stn.valueOf(stn2));//returns primitive value of string object
+
+       let arr=["Mayur","Sagar","Bala"];
+       let arr1=["Girish","Pradyumna","Vedang"];
+
+       console.log(arr.concat(arr1));//concate methods is used to join two arrays
+
+       console.log(arr.copyWithin(arr1));//copyWithin method is used copy the elements from array
+
+       arr.push("Mukta");//push method adds an element in an existing array
+       console.log(arr);
+
+       arr.pop("Mukta");//pop methods deletes an element from an existing array
+       console.log(arr);
+
+       arr.unshift("Tony");//unshift method returns new array length
+       console.log(arr);
+
+       arr.splice(2,2,"Captain America","Hulk");//splice method is used to remove elements from an existing array
+       console.log(arr);
+
+       let arr2=arr.slice(1);//Slice method is used to create a new arrya from the existing array
+       console.log(arr2);
+       console.log(arr);
+
+       arr.sort();//sort method is used to sort an array
+       console.log(arr);
+
+       let arr3=arr;
+       console.log(arr);
+       console.log(arr3.reverse());//reverse method is used to reverse the elements in an array
+       
+    </script>
+</body>
+</html>
