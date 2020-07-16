@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Assignment</title>
+</head>
+<body>
+    <h3>Take OS name and version from the user separated by space</h3>
+    <script>
+       
+
+        function os(){
+            let osname=prompt(`What OS is there in your system ?`);
+            let name=osname.split(" ",2);
+        
+            let osname3=console.log(name[0]);
+            let version=console.log(name[1]);
+
+            console.log(`The OS name is ${name[0]} and the Version is ${name[1]}`);
+
+        }
+
+        os();
+    </script>
+</body>
+</html>

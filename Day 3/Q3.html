@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Assignment</title>
+</head>
+<body>
+    <h3>Take Mark from user and Grade him.</h3>
+    <script> 
+        function grades()
+        {
+            let marks=prompt('What Marks have u gained?');
+
+            if(marks>=35 && marks<=50)
+            {
+                console.log(`Marks are ${marks} and grade is D`);
+            }
+            else if(marks>50 && marks<=65)
+            {
+                console.log(`Marks are ${marks} and grade is C`);
+            }
+            else if(marks>65 && marks<=80)
+            {
+                console.log(`Marks are ${marks} and grade is B`);
+            }
+            else if(marks>65 && marks<=80)
+            {
+                console.log(`Marks are ${marks} and grade is B`);
+            }
+            else if(marks>80 && marks<=95)
+            {
+                console.log(`Marks are ${marks} and grade is A`);
+            }
+            else if(marks>95 && marks<=100)
+            {
+                console.log(`Marks are ${marks} and grade is O`);
+            }
+            else{
+                console.log(`Marks are ${marks} and you are fail`);
+            }
+        }
+        grades();
+    </script>
+</body>
+</html>
