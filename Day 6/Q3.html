@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment</title>
+    <style>
+    .mystyle{
+        background-color: white;
+        color: black;
+    }
+
+    </style>
+</head>
+<body>
+    
+   <h2 id=wel>Welcome </h2>
+   <h3 id='clk'>Clock</h3>
+   <button id="Btn">Dark Theame</button>
+    <script>
+          let name=prompt('What is your name ?');
+          
+          wel.innerText +=` ${name}`;
+
+         const dmode=document.getElementById('Btn');
+
+
+         dmode.onclick = function changeColor(){
+              
+                  document.body.style.backgroundColor='black';
+
+                  document.body.style.color='white';
+             
+          }
+
+         
+
+
+        const ctime=document.getElementById('clk');
+          function clock(){
+              let date=new Date();
+              let time=date.toLocaleTimeString();
+              clk.innerText=time;
+
+          }
+        setInterval(clock,1000);
+    </script>
+</body>
+</html>
