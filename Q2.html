@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 Assignmnet</title>
+</head>
+<body>
+    <h3>Class User Example</h3>
+    <script>
+        class User{
+            constructor(name,age,email){
+                this.name=name;
+                this.age=age;
+                this.email=email;
+                this.luCoins=0;
+                this.courses=[];
+            }
+
+            login(){
+                console.log(`${this.name} has login`);
+                return this;
+            }
+
+            logout()
+            {
+                console.log(`${this.name} has logout`);
+                return this;
+            }
+
+            
+        }
+
+        class Moderator extends User{
+            addCoins(user,luCoins){
+                user.luCoins++;
+            }
+
+            removeCoins(user,luCoins){
+                user.luCoins--;
+            }
+
+        }
+
+        class Admin extends Moderator{
+            addCourse(user,course){
+                user.courses.push(course);
+                console.log(user);
+            }
+
+            removeCourse(user,course){
+                user.courses.pop(course)
+                console.log(user);
+           }
+        }
+
+        let user1=new User('Mayur',21,'mayur@gmail.com');
+        let user2=new User('Manas',18,'manas@gmail.com');
+        let mod=new Moderator('Rock',24,'rock@gmail.com');
+        let admin=new Admin('Admin',30,'admin@gmail.com');
+
+        let users=[user1,user2,mod,admin];
+        users.forEach(el=>{
+            console.log(el);
+        });
+
+        mod.addCoins(user1);
+        mod.addCoins(user2);
+        mod.removeCoins(user1);
+        admin.addCourse(user1,'Js');
+        admin.addCourse(user2,'Python');
+        admin.removeCourse(user1,'Js');
+        admin.addCourse(user1,'Js');
+        admin.addCourse(user1,'Python');
+        admin.addCourse(user1,'BlockChain');
+        admin.addCourse(user1,'CSS');
+        admin.removeCourse(user1,'CSS');
+
+    </script>
+</body>
+</html>
