@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Assignment</title>
+    <style>
+        #BG{
+            color: white;
+            background-color: brown;
+            width: 100wh;
+            height: 100vh;
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+  
+   <div id="BG">
+    <h3>Background Change</h3>
+   </div>
+   <script>
+        let bg = document.querySelector('#BG');
+        let colours = ["red", "black", "blue", "yellow","brown"];
+        let index = 0; 
+        function change() 
+        {
+  
+        if(index >= colours.length)
+            {
+             clearInterval(timer); 
+            }
+          bg.style.backgroundColor = colours[index++];
+        }
+        let timer = setInterval(change, 2000);
+   </script> 
+</body>
+</html>

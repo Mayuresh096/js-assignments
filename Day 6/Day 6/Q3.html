@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <h2 id=wel>Welcome </h2>
+    <h3 id='clk'>Clock</h3>
+    <button onclick="changeColor()">Dark Mode</button>
+
+<script>
+ let name=prompt('What is your name ?','Anonymous');          
+          wel.innerText +=` ${name}`;
+
+function changeColor() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+const ctime=document.getElementById('clk');
+          function clock()
+              let date=new Date();
+              let time=date.toLocaleTimeString();
+              clk.innerText=time;
+
+          }
+        setInterval(clock,1000);
+</script>
+
+</body>
+</html>
