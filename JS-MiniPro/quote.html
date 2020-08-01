@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@600&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat&family=Dancing+Script:wght@600&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+
+
+
+        body{
+            margin-top: 0%;
+            background-color: rgb(72,172,252);
+            color: white;
+            width: 100wh;
+            height: 100px;
+            
+        }
+
+        .Quote{
+            margin-top: 15%;
+            box-sizing: border-box;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        #LU{
+           font-size: 10px;
+           
+           font-family: 'Caveat', cursive;
+           font-family: 'Dancing Script', cursive;
+        }
+
+        #MP{
+            margin-top:-15px;
+            font-size: 15px;
+            
+            font-family: 'Caveat', cursive;
+           font-family: 'Dancing Script', cursive;
+        }
+
+        #Con{
+            margin-top: -20px;
+            
+            font-size: 32px;
+            font-family: 'Allura', cursive;
+            
+        }
+
+        #quote{
+            margin-top: -20px;
+            margin-left:5%;
+            font-size: 40px;
+            font-family: 'Lobster', cursive;
+        }
+
+    </style>
+</head>
+<body>
+    <div class='Quote'>
+        <h5 id='LU'>Lets Upgrade</h5>
+        <h4 id='MP'>Mini Project</h4>
+        <h3 id='Con'>Quote is,</h2>
+        <h1 id='quote'></h1>
+    </div>
+
+    <script>
+        let quotes=[`"Life is what happens when you're busy making other plans."<br> -John Lennon`,`"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough."<br> -Oprah Winfrey`,`"If life were predictable it would cease to be life, and be without flavor."<br>  -Eleanor Roosevelt`,`"The way to get started is to quit talking and begin doing."<br>  -Walt Disney`,`"The greatest glory in living lies not in never falling, but in rising every time we fall."<br>  -Nelson Mandela`,`"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking."<br>  -Steve Jobs
+`,`"Spread love everywhere you go. Let no one ever come to you without leaving happier."<br>  -Mother Teresa`,`"Don't judge each day by the harvest you reap but by the seeds that you plant."<br>  -Robert Louis Stevenson`,`"Tell me and I forget. Teach me and I remember. Involve me and I learn."<br>  -Benjamin Franklin`,`"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart."<br>  -Helen Keller`,`"Whoever is happy will make others happy too."<br>  -Anne Frank`,`"Do not go where the path may lead, go instead where there is no path and leave a trail."<br> -Ralph Waldo Emerson`];
+        function quote(){
+            let ran=Math.floor(Math.random() * (quotes.length));
+            document.getElementById('quote').innerHTML=quotes[ran];
+        }
+        quote()
+    </script>
+</body>
+</html>
